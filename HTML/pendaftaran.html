@@ -2,42 +2,51 @@
 <html lang="id">
 <head>
     <title>Pendaftaran - Puskesmas Sehat</title>
+    <!-- Hubungkan file CSS -->
+    <link rel="stylesheet" href="../CSS/style.css">
 </head>
 <body>
+
     <!-- Header -->
     <header>
         <h1>Puskesmas Sehat</h1>
+        <p class="tagline">Kesehatan Anda adalah <span>Prioritas Kami</span></p>
         <!-- Navigasi -->
         <nav>
-            <a href="home.html">Beranda</a> |
-            <a href="layanan.html">Layanan</a> |
-            <a href="pendaftaran.html">Pendaftaran</a> |
-            <a href="kontak.html">Kontak</a>
+            <a href="home.html">Beranda</a>
+            <a href="tentang.html">Tentang Kami</a>
+            <a href="jadwal.html">Jadwal Operasional</a>
+            <a href="layanan.html">Layanan</a>
+            <a href="pendaftaran.html">Pendaftaran</a>
+            <a href="kontak.html">Kontak Kami</a>
         </nav>
-        <hr>
     </header>
 
-    <!-- Konten Utama -->
+    <!-- Konten Pendaftaran -->
     <main>
-        <h2>Formulir Pendaftaran</h2>
-        <form>
-            <label for="nama">Nama Lengkap:</label><br>
+        <h2>Pendaftaran Pasien</h2>
+        <p>Isi form di bawah ini untuk mendaftar sebagai pasien dan kirimkan keluhan Anda.</p>
+
+        <form id="formPendaftaran">
+            <label for="nama">Nama Lengkap:</label>
             <input type="text" id="nama" name="nama" required><br><br>
 
-            <label for="umur">Umur:</label><br>
+            <label for="umur">Umur:</label>
             <input type="number" id="umur" name="umur" required><br><br>
 
-            <label for="keluhan">Keluhan:</label><br>
-            <textarea id="keluhan" name="keluhan" rows="4" cols="50" required></textarea><br><br>
+            <label for="keluhan">Keluhan Kesehatan:</label><br>
+            <textarea id="keluhan" name="keluhan" rows="4" required></textarea><br><br>
 
             <button type="submit">Daftar</button>
         </form>
+
+        <p id="konfirmasiPesan"></p>
     </main>
 
     <!-- Footer -->
     <footer>
-        <hr>
         <p>Puskesmas Sehat © 2024</p>
     </footer>
+
 </body>
 </html>
