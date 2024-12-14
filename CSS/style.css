@@ -4,14 +4,14 @@ body {
     line-height: 1.6;
     margin: 0;
     padding: 0;
-    background-color: #f9f9f9;
+    background: linear-gradient(to bottom, #007BFF, #f9f9f9);
     color: #333;
 }
 
 /* Header */
 header {
     text-align: center;
-    background-color: #007BFF;
+    background: linear-gradient(to right, #007BFF, #0056b3);
     color: white;
     padding: 20px 0;
 }
@@ -33,7 +33,7 @@ header {
 /* Navigasi */
 nav {
     margin-top: 10px;
-    background-color: #0056b3;
+    background: linear-gradient(to right, #0056b3, #007BFF);
     padding: 10px;
 }
 
@@ -46,6 +46,7 @@ nav a {
 
 nav a:hover {
     text-decoration: underline;
+    color: #FFD700;
 }
 
 /* Konten */
@@ -100,7 +101,7 @@ table tr:nth-child(even) {
 footer {
     text-align: center;
     padding: 10px 0;
-    background-color: #007BFF;
+    background: linear-gradient(to right, #0056b3, #003f7d); /* Gradasi biru tua */
     color: white;
     margin-top: 30px;
 }
